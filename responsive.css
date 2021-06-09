@@ -1,0 +1,165 @@
+/* header */
+.menu-res {
+    display: none;
+    overflow: hidden;
+}
+/* / header */
+
+/* 1000px Tablet */
+@media (max-width: 1000px) {
+    
+    .clear {
+        clear: left;
+    }
+
+    /* Nav */
+    .link {
+        padding: 10px 40px;
+    }
+    /* / Nav */
+
+    /* Main */
+    .top-title h2{
+        font-size: 30px;
+    }
+    /* / Main */
+
+    /* body */
+    .cake-wrapper {
+        height: 100%;
+    }
+	.heading h2 {
+	  font-size: 24px;
+	}
+	.cake-icon p {
+		font-size: 20px;
+	}
+	.txt-contents {
+	  font-size: 16px;
+	}
+    .cake {
+        margin-bottom: 40px;
+        width: 50%;
+        float: left;
+    }
+	center {
+		font-size: 13px;
+	}
+	.link, .home {
+		padding: 8px 30px;
+	}
+	.fa {
+		font-size: 56px;
+	}
+	.feature {
+		margin-bottom: 25px;
+		margin-left: 3px;
+		font-size: 18px;
+	}
+	.message {
+	  font-size: 13px;
+	}
+    /* / body */
+	.contact-wrapper h1 {
+		font-size: 22px;
+	}
+	.contact {
+		font-size: 13px;
+	}
+	.fab, .fas {
+		font-size: 48px;
+	}
+	 .copyright h1 {
+		 font-size: 30px;
+	 }
+	 .copyright p {
+	   font-size: 13px;
+	 }
+}
+
+/* 670px Smartphone */
+@media (max-width: 670px) {
+    .clear {
+        clear: left;
+    }
+    /* header */
+    .menu-res {
+        display: block;
+        overflow: visible;
+        margin-top: 10px;
+    }
+    
+    .menu-icon {
+        color: #FFFAF0;
+        float: left;
+    }
+
+    .menu-res p {
+        color: #FFFAF0;
+        margin: 5px 0 0 10px;
+        display: inline-block;
+    }
+    .header-home center {
+        display: none;
+        overflow: hidden;
+    }
+    /* / header */
+
+    /* Main */
+    .top-title {
+        text-align: center;
+    }
+    /* / Main */
+
+	/* body */
+    .cake-wrapper {
+        height: 100%;
+    }
+	.heading h2 {
+	  font-size: 28px;
+	}
+	.cake-icon p {
+		font-size: 20px;
+	}
+	.txt-contents {
+	  font-size: 14px;
+	}
+    .cake {
+        padding-bottom: 40px;
+		margin-bottom: 0;
+        width: 100%;
+        float: initial;
+    }
+	.fa {
+		font-size: 48px;
+	}
+	.feature {
+		margin-bottom: 25px;
+		margin-left: 3px;
+		font-size: 13px;
+	}
+	.message {
+	  font-size: 11px;
+	}
+    /* / body */
+	.contact-wrapper h1 {
+		font-size: 28px;
+	}
+	.contact-list {
+		display: block;
+	}
+	.contact {
+		font-size: 18px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.fab, .fas {
+		font-size: 60px;
+	}
+	 .copyright h1 {
+		 font-size: 28px;
+	 }
+	 .copyright p {
+	   font-size: 11px;
+	 }
+}

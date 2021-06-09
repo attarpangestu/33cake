@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.clear {
+  clear: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.link {
+  padding: 10px 50px;
+  color: #fff5eb;
+  display: inline-block;
+  margin: 15px 0;
+  transition: all 0.5s;
+}
+
+.home {
+  padding: 10px 50px;
+  color: #45110b;
+  background-color: #fff5eb;
+  display: inline-block;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.link:hover{
+  color: #cfab99;
+}
+
+.top-wrapper {
+  padding-top: 60px;
+  background-color: #dd6658;
+  color: #FFFAF0;
+}
+
+.top-title {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Yesteryear', cursive;
+}
+
+.top-title h2{
+	font-size: 40px;
+	margin: 20px 0 0 0;
+}
+
+.top-title p {
+	font-family: "MV Boli";
+	font-size: 20px;
+	margin: 0 0 10px 0;
+}
+
+.mySlides {display: none}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(69, 17, 11,0.9);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff5eb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #cfab99;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.fade img {
+	width: 100%;
+	height: 360px;
+	opacity: 0.75;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(69, 17, 11, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.cake-wrapper {
+  height: 600px;
+  background-color: #FFFAF0;
+  text-align: center;
+  color: #FA8072;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.heading {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.heading h2 {
+  font-family: "Tekton Pro";
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.cake {
+  float: left;
+  font-family: "MV Boli";
+  cursor: pointer;
+  transition: transform .2s;
+  width: 25%;
+}
+
+.cake:hover {
+  background-color: #FA8072;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transform: scale(1.1);
+  color: #FFFAF0;
+}
+
+.cake-icon p {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0;
+}
+
+.cake-icon img {
+	width: 100%;
+	border-radius: 7px 7px 0 0;
+	margin-bottom: 10px;
+}
+
+.txt-contents {
+  width: 90%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+}
+
+.message-wrapper {
+  text-align: center;
+  background-color: #FBD6B7;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.features {
+	padding: 35px 0;
+}
+
+.feature {
+	float: left;
+	width: 32.5%;
+	border-bottom-style: dotted;
+	border-color: #FA8072;
+	margin-bottom: 30px;
+	margin-left: 4px;
+	color: #FA8072;
+	font-family: "Tekton Pro";
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+.feature:hover {
+	color: #FFFAF0;
+}
+
+.fa {
+	font-size: 72px;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #FA8072;
+  cursor: pointer;
+  box-shadow: 0 7px #dd6658;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer {
+  font-family: 'Yesteryear', cursive;
+  color: #fff5eb;
+   background-color: #45110b;
+  text-align: center;
+}
+
+.contact-list {
+	display: flex;
+	justify-content: center;
+}
+.contact-wrapper h1 {
+	font-size: 30px;
+}
+.contact-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.contact {
+	width: 33%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+footer hr {
+  border: 2px solid #cfab99;
+  background-color: #cfab99;
+}
+
+.fab, .fas {
+	font-size: 60px;
+}
+ .copyright {
+   padding: 10px 0;
+ }
+ 
+ .copyright h1 {
+	 font-size: 40px;
+ }
+ 
+ .copyright p {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+ }

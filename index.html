@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33 Cake</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+	 <div class="container">
+       <div class="header-home">
+         <div class="menu-res">
+          <span class="fa fa-bars menu-icon" style="font-size: 30px; padding: 8px;"></span>
+          <p style="font-size: 20px; padding: 5px;">Menu</p>
+        </div>
+        <center>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="link aboutus">About Us</a> 
+        <a href="#" class="link product">Product</a> 
+        <a href="#" class="link service">Services</a> 
+        <a href="#" class="link contacts">Contacts</a>
+        </center>
+       </div>
+     </div>
+    </header>
+    <div class="top-wrapper">
+		<div class="container">
+			<div class="top-title">
+				<h2>33 Birthday Cake</h2>
+				<p>Buktikan Rasa Lezatnya</p>
+			</div>
+		</div>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+			  <img src="cake1.jpg">
+			</div>
+			<div class="mySlides fade">
+			  <img src="cake2.jpg">
+			</div>
+			<div class="mySlides fade">
+			  <img src="cake3.jpg">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+    </div>
+    <div class="cake-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Tersedia dalam 4 varian rasa berbeda</h2>
+        </div>
+        <div class="cakes">
+          <div class="cake">
+            <div class="cake-icon">
+              <img src="black.jpg">
+               <p>Black Forest</p>
+            </div>
+            <p class="txt-contents">Kue bolu coklat dilapisi krim segar, serutan coklat dan ceri yang direndam dalam Kirschwasser</p>
+          </div>
+          <div class="cake">
+            <div class="cake-icon">
+              <img src="snowcheese.jpg">
+              <p>Snow Cheese</p>
+            </div>
+            <p class="txt-contents">Kue bolu campuran keju dengan telur, susu, dan gula, yang dilapisi dengan serutan keju dan ceri</p>
+          </div>
+          <div class="cake">
+            <div class="cake-icon">
+              <img src="redvelvet.jpg">
+              <p>Red Velvet</p>
+            </div>
+            <p class="txt-contents"> Kue bolu lapis coklat berwarna merah atau coklat kemerahan, yang dilapisi dengan keju krim putih dan ceri</p>
+          </div>
+          <div class="cake">
+            <div class="cake-icon">
+              <img src="greentea.jpg">
+              <p>Green Tea</p>
+            </div>
+            <p class="txt-contents">Kue bolu yang dicampurkan dengan bubuk teh hijau yang dilapisi dengan krim putih dan ceri</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="features">
+		  <div class="feature">
+			<span class="fa fa-birthday-cake"></span>
+			<p>Birthday</p>
+		  </div>
+		  <div class="feature">
+			<span class="fa fa-coins"></span>
+			<p>Discount</p>
+		  </div>
+		  <div class="feature">
+			<span class="fa fa-truck"></span>
+			<p>Fast Delivery</p>
+		  </div>
+        </div>
+        <span class="btn message">Pesan Sekarang</span>
+      </div>
+    </div>
+    <footer>
+        <div class="contact-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h1>Contacts Us</h1>
+                </div>
+                <div class="contact-list">
+                    <div class="contact">
+                        <span class="fab fa-whatsapp-square"></span>
+                        <p>08123456789</p>
+                    </div>
+                    <div class="contact">
+                        <span class="fas fa-envelope-square"></span>
+                        <p>birthdaycake33@gmail.com</p>
+                    </div>
+                    <div class="contact">
+                        <span class="fab fa-instagram-square"></span>
+                        <p>@birthday_cake33</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <h1>33 Birthday Cake</h1>
+            <p>33 Birthday Cake &#169; Copyright 2021. All rights reserved.</p>
+        </div>
+    </footer>
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+  </body>
+</html>

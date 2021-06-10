@@ -163,3 +163,21 @@
 	   font-size: 11px;
 	 }
 }
+
+@media (max-width: 450px) {
+    .clear {
+        clear: left;
+    }
+    
+	/* body */
+	.fa {
+		font-size: 36px;
+	}
+	.feature {
+		margin-bottom: 25px;
+		margin-left: 0;
+		width: 33%;
+		border-bottom-style: solid;
+		font-size: 11px;
+	}
+}
